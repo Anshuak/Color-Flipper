@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 67.5%;
+}
+
+body {
+    background-color: #fafafa;
+}
+
+nav {
+    display: flex;
+    background-color: #f0fff0;
+    width: 100%;
+    height: 5rem;
+    /* justify-content: center; */
+    align-items: center;
+    padding: 2rem;
+    box-shadow: 2px 8px 5px #d8d5d5;
+}
+
+nav h2 {
+    font-size: 2.5rem;
+    margin-left: 20%;
+    color: #4169E1;
+}
+
+nav ul {
+    display: flex;
+    font-size: 2.4rem;
+    margin-left: 30%;
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 30%;
+    color: #000000;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.middle {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width: 100vw;
+    flex-direction: column;
+}
+
+.middle p {
+    padding: 10px;
+    font-size: 5rem;
+    border: 2px solid #000000;
+    color: white;
+    background-color: #000000;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#colorBtn {
+    font-size: 2.4rem;
+    padding: 10px 30px;
+    border: 2px solid #000000;
+    margin-top: 3rem;
+    color: #000000;
+    font-weight: 500;
+    outline: none;
+    border-radius: 10px;
+}
+
+#colorBtn:hover {
+    color: #fafafa;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+#colorBtn:active {
+    background-color: #000000;
+    box-shadow: 0 5px #000000;
+    transform: translateY(2px);
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    font-size: 2rem;
+    padding: 10px;
+    text-align: center;
+    width: 100vw;
+    font-weight: 800;
+    /* border: 2px solid #000000; */
+    background-color: #bcd6bc;
+}
+
+.inputHex {
+    background-color: #000000;
+    border: none;
+    width: 40rem;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+#textColorHex {
+    display: none;
+}
+
+
+/* Making responsive */
+
+@media only screen and (max-width: 834px) {
+    nav {
+        width: 100%;
+        padding: 1rem;
+    }
+    nav h2 {
+        font-size: 1.4rem;
+        margin: 0;
+    }
+    nav ul {
+        margin-left: 20px;
+    }
+    nav ul li a {
+        font-size: 1.4rem;
+    }
+    nav ul li {
+        margin-right: 10px;
+    }
+    .middle {
+        padding: 5px;
+        width: 100vw;
+        height: 50vh;
+    }
+    .middle p {
+        font-size: 3rem;
+    }
+    .inputHex {
+        width: 30rem;
+        /* text-align: left; */
+        padding: 5px;
+        font-size: 2rem;
+    }
+}
